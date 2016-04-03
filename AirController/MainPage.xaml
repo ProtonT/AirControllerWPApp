@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="AirController.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AirController"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="0,-28.667,0,-0.333">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resourses/bg.png" />
+        </Grid.Background>
+        <Image Name="Tlen" Source="/Resourses/bg_tlen.png" Opacity="0" />
+
+        <Button x:Name="buttonManual" Content="Turn On" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Bottom" Height="70" Width="185" Click="buttonManualControl_Click"/>
+        <Button x:Name="buttonAuto" Content="Auto" HorizontalAlignment="Right" Margin="0,0,10,0" VerticalAlignment="Bottom" Height="70" Width="185" Click="buttonAuto_Click"/>
+        <Border Background="Gray" Margin="0,100,0,0" VerticalAlignment="Top" Height="25" Width="270" Opacity="0.7" CornerRadius="7" />
+        <TextBlock x:Name="Info" VerticalAlignment="Top" TextAlignment="Center" Margin="0,100,0,0" Height="30" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Current CO2 concentration:" FontSize="21.333" />
+        <TextBlock x:Name="Percent" HorizontalAlignment="Center" Margin="0,150,0,0" TextWrapping="Wrap" Text="0%" VerticalAlignment="Top" FontSize="110" Foreground="Lime"/>
+        <Border Background="Gray" Margin="0,0,0,102" VerticalAlignment="Bottom" Height="30" Width="340" Opacity="0.7" CornerRadius="7" />
+        <TextBlock x:Name="CurrentMode" HorizontalAlignment="Left" Margin="70,0,0,100" TextWrapping="Wrap" Text="Current Mode: " FontSize="26.667" VerticalAlignment="Bottom" Foreground="White"/>
+        <Button x:Name="button" Content="Show Last Image" HorizontalAlignment="Left" Margin="3,31,0,0" VerticalAlignment="Top" Click="button_Click"/>
+
+    </Grid>
+</Page>
